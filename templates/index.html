@@ -1,0 +1,9 @@
+<!doctype html>
+<head>
+    <title>Factioneer</title>
+</head>
+<body>
+    {% for player, faction in assignments %}
+    <p><b>{{ player }}</b>: {{ faction }}</p>
+    {% endfor %}
+</body>
