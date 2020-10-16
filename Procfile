@@ -1,1 +1,1 @@
-web: gunicorn factioneer.wsgi --log-file -
+web: gunicorn factioneer:app
