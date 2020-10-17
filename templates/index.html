@@ -3,7 +3,14 @@
     <title>Factioneer</title>
 </head>
 <body>
-    {% for player, faction in assignments %}
-    <p><b>{{ player }}</b>: {{ faction }}</p>
-    {% endfor %}
+<table>
+    <tbody>
+        {% for player, faction in assignments %}
+        <tr>
+            <td style="width: 500px;"><b>{{ player }}</b></td>
+            <td>{{ faction }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table> 
 </body>
